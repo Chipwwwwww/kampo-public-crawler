@@ -1,8 +1,564 @@
 {
-  "run_id": "",
-  "captured_at": "",
-  "targets": [],
-  "api_count": 0,
-  "api_samples": [],
-  "findings": []
+  "run_id": "audit_20260509_061139",
+  "captured_at": "2026-05-08T22:11:53.339774+00:00",
+  "targets": [
+    "https://www.kampojanechen.org/",
+    "https://www.kampojanechen.org/v2/Official/NewestSalePage"
+  ],
+  "api_count": 69,
+  "api_samples": [
+    {
+      "url": "https://static.91app.com/tracking-service/shop-agency-config/41047.json",
+      "status": 200,
+      "keys": [
+        "agencies"
+      ],
+      "size_hint": 99
+    },
+    {
+      "url": "https://track.91app.io/v2/did",
+      "status": 200,
+      "keys": [
+        "did"
+      ],
+      "size_hint": 47
+    },
+    {
+      "url": "https://www.kampojanechen.org/webapi/Auth/IsLogin?shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [],
+      "size_hint": 5
+    },
+    {
+      "url": "https://www.kampojanechen.org/cms/api/smartTag/setting/41047",
+      "status": 200,
+      "keys": [
+        "isDefaultPreciseSearch",
+        "isEnableSmartTag",
+        "provider"
+      ],
+      "size_hint": 89
+    },
+    {
+      "url": "https://www.kampojanechen.org/webapi/TraceSalePageList/GetCount?shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [],
+      "size_hint": 1
+    },
+    {
+      "url": "https://www.kampojanechen.org/webapi/TraceSalePageList/GetTraceSalePageIds?shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [
+        "msg",
+        "data"
+      ],
+      "size_hint": 23
+    },
+    {
+      "url": "https://www.kampojanechen.org/webapi/ShoppingCartV2/GetCount?locationId=0&shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [],
+      "size_hint": 1
+    },
+    {
+      "url": "https://track.91app.io/v2/collect?v=3&dl=https%3A%2F%2Fwww.kampojanechen.org%2F&dp=%2F&ch=web&sr=1280x720&ssid=f0c26754-81a1-4dd3-bb47-67bc6a7f7ced&ul=zh-TW&ht=1778278304574&tid=UA-63092235-26&ld=zh-tw&ccode=tw&evtid=31f2eb8b-de8a-4515-832f-102b35515890&shopid=41047&cd1=5fa3bd5b-bb52-4955-b7bc-88a4d2d87e10&cd2=gaClientId&cd3=false&cd4=5fa3bd5b-bb52-4955-b7bc-88a4d2d87e10%2F%2FgaClientId%2F%2F&cd6=tw&cd7=41047&cd8=zh-tw&cd9=TWD&cid=5fa3bd5b-bb52-4955-b7bc-88a4d2d87e10&evtn=view&evtk1=view_type&evtvs1=Home&evtk2=view_title&evtvs2=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88%E7%81%BD%E8%88%87%E8%B6%85%E5%BA%A6%E6%9C%8D%E5%8B%99&evtk3=view_from&evtvs3=unknown&evtk4=view_detail&evtvs4=/&evtk5=event_id&evtvs5=23b6abad-d5d8-4904-83e3-e3f1ccc58078_1778278304286",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://cms-static.cdn.91app.com/config/cms-permission/jooii.config.json",
+      "status": 200,
+      "keys": [
+        "token"
+      ],
+      "size_hint": 472
+    },
+    {
+      "url": "https://webapi.91app.com/webapi/Activity/GetActivityList?shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [
+        "Data",
+        "ReturnCode",
+        "Message"
+      ],
+      "size_hint": 59
+    },
+    {
+      "url": "https://webapi.91app.com/webapi/Official/GetOfficialPromotionTargetList/41047?shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [
+        "ReturnCode",
+        "Data",
+        "Message"
+      ],
+      "size_hint": 59
+    },
+    {
+      "url": "https://fts-api.91app.com/salepage-listing/api/search/config/41047?lang=zh-TW&locationId=0",
+      "status": 200,
+      "keys": [
+        "code",
+        "message",
+        "data"
+      ],
+      "size_hint": 190
+    },
+    {
+      "url": "https://webapi.91app.com/webapi/Shop/GetShopCategoryListV3/41047?shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [
+        "Count",
+        "MaxChildListCount",
+        "List"
+      ],
+      "size_hint": 10884
+    },
+    {
+      "url": "https://webapi.91app.com/webapi/Shop/GetEnableDisplayStoreList/41047?shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [
+        "ReturnCode",
+        "Data",
+        "Message"
+      ],
+      "size_hint": 55
+    },
+    {
+      "url": "https://webapi.91app.com/webapi/Shop/GetShopAvailLanguages?shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [
+        "ReturnCode",
+        "Data",
+        "Message"
+      ],
+      "size_hint": 1050
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/11440855282/?random=1778278305091&cv=11&fst=1778278305091&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118463261~118719171&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2F&rcb=3&frm=0&tiba=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=3&frm=0&en=page_view&dl=https%3A%2F%2Fwww.kampojanechen.org%2F&scrsrc=www.googletagmanager.com&rnd=1331910358.1778278305&dt=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88&auid=78577336.1778278305&navt=n&npa=0&_tu=QA&gtm=45be6562za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118463261~118719171&apve=1&apvf=f&apvc=1&tids=AW-11440855282&tid=AW-11440855282&tft=1778278305146&tfd=4509",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/11440855282/?random=1778278305126&cv=11&fst=1778278305126&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118463261~118719171&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2F&rcb=3&frm=0&tiba=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=3&frm=0&en=view&dl=https%3A%2F%2Fwww.kampojanechen.org%2F&scrsrc=www.googletagmanager.com&rnd=1331910358.1778278305&dt=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88&auid=78577336.1778278305&navt=n&npa=0&ep.view_type=Home&ep.view_title=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88%E7%81%BD%E8%88%87%E8%B6%85%E5%BA%A6%E6%9C%8D%E5%8B%99&ep.view_from=unknown&_tu=QA&gtm=45be6562za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118463261~118719171&apve=1&apvf=f&apvc=0&tids=AW-11440855282&tid=AW-11440855282&tft=1778278305147&tfd=4510",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/11440855282/?random=1778278305136&cv=11&fst=1778278305136&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118463261~118719171&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2F&rcb=3&frm=0&tiba=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/11440855282/?random=1778278305139&cv=11&fst=1778278305139&fmt=8&bg=ffffff&guid=ON&async=1&en=view&gtm=45be6562za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118463261~118719171&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2F&rcb=3&frm=0&tiba=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&_tu=QA&data=event%3Dview%3Bview_type%3DHome%3Bview_title%3D%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88%E7%81%BD%E8%88%87%E8%B6%85%E5%BA%A6%E6%9C%8D%E5%8B%99%3Bview_from%3Dunknown&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/11440855282/?random=1778278305141&cv=11&fst=1778278305141&fmt=8&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6562za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118463261~118719171&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2F&rcb=3&frm=0&tiba=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&_tu=QA&data=event%3Dpage_view&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/11440855282/?random=1778278305131&cv=11&fst=1778278305131&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118463261~118719171&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2F&rcb=3&frm=0&tiba=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/10840491732/?random=1778278305396&cv=11&fst=1778278305396&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562v9216221438za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118128922~118463261~118494633&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2F&rcb=11&frm=0&tiba=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/10840491732/?random=1778278305402&cv=11&fst=1778278305402&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562v9216221438za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118128922~118463261~118494633&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2F&rcb=11&frm=0&tiba=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/10840491732/?random=1778278305355&cv=11&fst=1778278305355&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562v9216221438za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118128922~118463261~118494633&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2F&rcb=11&frm=0&tiba=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/10840491732/?random=1778278305408&cv=11&fst=1778278305408&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562v9216221438za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118128922~118463261~118494633&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2F&rcb=11&frm=0&tiba=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/ccm/form-data/10840491732?gtm=45be6562v9216221438za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118128922~118463261~118494633&rcb=11&npa=0&frm=0&pscdl=noapi&auid=78577336.1778278305&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&ec_mode=a&_tu=QA&em=tv.1",
+      "status": 204,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/10840491732/?random=1778278305414&cv=11&fst=1778278305414&fmt=8&bg=ffffff&guid=ON&async=1&en=view&gtm=45be6562v9216221438za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118128922~118463261~118494633&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2F&rcb=11&frm=0&tiba=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=QA&data=event%3Dview%3Bview_type%3DHome%3Bview_title%3D%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88%E7%81%BD%E8%88%87%E8%B6%85%E5%BA%A6%E6%9C%8D%E5%8B%99%3Bview_from%3Dunknown&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=11&frm=0&en=view&dl=https%3A%2F%2Fwww.kampojanechen.org%2F&scrsrc=www.googletagmanager.com&rnd=1331910358.1778278305&dt=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88&auid=78577336.1778278305&navt=n&npa=0&ep.view_type=Home&ep.view_title=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88%E7%81%BD%E8%88%87%E8%B6%85%E5%BA%A6%E6%9C%8D%E5%8B%99&ep.view_from=unknown&_tu=QA&gtm=45be6562v9216221438za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118128922~118463261~118494633&apve=1&apvf=f&apvc=0&tids=AW-10840491732&tid=AW-10840491732&tft=1778278305419&tfd=4782",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=11&frm=0&en=page_view&dl=https%3A%2F%2Fwww.kampojanechen.org%2F&scrsrc=www.googletagmanager.com&rnd=1331910358.1778278305&dt=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88&auid=78577336.1778278305&navt=n&npa=0&_tu=QA&gtm=45be6562v9216221438za200zb846761908zd846761908xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118128922~118463261~118494633&apve=1&apvf=f&apvc=0&tids=AW-10840491732&tid=AW-10840491732&tft=1778278305419&tfd=4782",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://jooii.91app.io/jooii-search-panel/v1/shop",
+      "status": 200,
+      "keys": [
+        "is_enabled"
+      ],
+      "size_hint": 21
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-2LCJZ8MB77&gtm=45je6562v872448215za200zb846761908zd846761908&_p=1778278303753&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=461030838.1778278305&frm=0&pscdl=noapi&rcb=8&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-tw&_s=1&tag_exp=0~115938465~115938469~118463262~118494633&sid=1778278305&sct=1&seg=0&dl=https%3A%2F%2Fwww.kampojanechen.org%2F&dt=%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%7C%E5%82%B3%E6%89%BF%E6%B3%95%E7%8E%8B%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%97%8F%E5%82%B3%E4%BD%9B%E6%95%99%E5%9F%BA%E5%9C%B0%E3%80%82%E6%8F%90%E4%BE%9B%E6%B0%B8%E4%B9%85%E7%89%8C%E4%BD%8D%E3%80%81%E6%B6%88%E7%81%BD%E8%88%87%E8%B6%85%E5%BA%A6%E6%9C%8D%E5%8B%99&_tu=QA&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=4810",
+      "status": 204,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/id",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/id",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "keys": [],
+      "size_hint": 104
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "status": 200,
+      "keys": [],
+      "size_hint": 104
+    },
+    {
+      "url": "https://static.91app.com/tracking-service/shop-agency-config/41047.json",
+      "status": 200,
+      "keys": [
+        "agencies"
+      ],
+      "size_hint": 99
+    },
+    {
+      "url": "https://fts-api.91app.com/pythia-cdn/graphql?shopId=41047&lang=zh-TW&query=query%20cms_shopCategoryList(%24shopId%3A%20Int!)%20%7B%0A%20%20shopCategoryList(shopId%3A%20%24shopId)%20%7B%0A%20%20%20%20categoryList%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20childList%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20__typename%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20__typename%0A%20%20%20%20%7D%0A%20%20%20%20count%0A%20%20%20%20maxChildListCount%0A%20%20%20%20__typename%0A%20%20%7D%0A%7D%0A&operationName=cms_shopCategoryList&variables=%7B%22shopId%22%3A41047%7D",
+      "status": 200,
+      "keys": [
+        "data"
+      ],
+      "size_hint": 3062
+    },
+    {
+      "url": "https://www.kampojanechen.org/webapi/Auth/IsLogin?shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [],
+      "size_hint": 5
+    },
+    {
+      "url": "https://webapi.91app.com/webapi/Shop/GetEnableDisplayStoreList/41047?shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [
+        "ReturnCode",
+        "Data",
+        "Message"
+      ],
+      "size_hint": 55
+    },
+    {
+      "url": "https://webapi.91app.com/webapi/Shop/GetShopCategoryListV3/41047?shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [
+        "Count",
+        "MaxChildListCount",
+        "List"
+      ],
+      "size_hint": 10884
+    },
+    {
+      "url": "https://webapi.91app.com/webapi/Official/GetOfficialPromotionTargetList/41047?shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [
+        "ReturnCode",
+        "Data",
+        "Message"
+      ],
+      "size_hint": 59
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/11440855282/?random=1778278307833&cv=11&fst=1778278307833&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616986~115938465~115938468~118463262&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&rcb=14&frm=0&tiba=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/11440855282/?random=1778278307807&cv=11&fst=1778278307807&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616986~115938465~115938468~118463262&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&rcb=14&frm=0&tiba=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/11440855282/?random=1778278307836&cv=11&fst=1778278307836&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616986~115938465~115938468~118463262&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&rcb=14&frm=0&tiba=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://cms-static.cdn.91app.com/config/cms-permission/jooii.config.json",
+      "status": 200,
+      "keys": [
+        "token"
+      ],
+      "size_hint": 472
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/11440855282/?random=1778278307839&cv=11&fst=1778278307839&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616986~115938465~115938468~118463262&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&rcb=14&frm=0&tiba=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://webapi.91app.com/webapi/Activity/GetActivityList?shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [
+        "Data",
+        "ReturnCode",
+        "Message"
+      ],
+      "size_hint": 59
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=14&frm=0&en=page_view&dl=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&scrsrc=www.googletagmanager.com&rnd=1629173577.1778278308&dt=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&auid=78577336.1778278305&navt=n&npa=0&_tu=QA&gtm=45be6562za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616986~115938465~115938468~118463262&apve=1&apvf=f&apvc=1&tids=AW-11440855282&tid=AW-11440855282&tft=1778278307841&tfd=992",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=14&frm=0&en=view&dl=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&scrsrc=www.googletagmanager.com&rnd=1629173577.1778278308&dt=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&auid=78577336.1778278305&navt=n&npa=0&ep.view_type=NewestSalePage&ep.view_title=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&ep.view_from=unknown&_tu=QA&gtm=45be6562za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616986~115938465~115938468~118463262&apve=1&apvf=f&apvc=0&tids=AW-11440855282&tid=AW-11440855282&tft=1778278307893&tfd=1044",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=14&frm=0&en=page_view&dl=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&scrsrc=www.googletagmanager.com&rnd=1629173577.1778278308&dt=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&auid=78577336.1778278305&navt=n&npa=0&_tu=QA&gtm=45be6562za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616986~115938465~115938468~118463262&apve=1&apvf=f&apvc=0&tids=AW-11440855282&tid=AW-11440855282&tft=1778278307893&tfd=1044",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/11440855282/?random=1778278307887&cv=11&fst=1778278307887&fmt=8&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6562za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616986~115938465~115938468~118463262&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&rcb=14&frm=0&tiba=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=QA&data=event%3Dpage_view&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/11440855282/?random=1778278307883&cv=11&fst=1778278307883&fmt=8&bg=ffffff&guid=ON&async=1&en=view&gtm=45be6562za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616986~115938465~115938468~118463262&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&rcb=14&frm=0&tiba=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=QA&data=event%3Dview%3Bview_type%3DNewestSalePage%3Bview_title%3D%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%3Bview_from%3Dunknown&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.kampojanechen.org/cms/api/smartTag/setting/41047",
+      "status": 200,
+      "keys": [
+        "isDefaultPreciseSearch",
+        "isEnableSmartTag",
+        "provider"
+      ],
+      "size_hint": 89
+    },
+    {
+      "url": "https://www.kampojanechen.org/webapi/TraceSalePageList/GetTraceSalePageIds?shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [
+        "msg",
+        "data"
+      ],
+      "size_hint": 23
+    },
+    {
+      "url": "https://track.91app.io/v2/collect?v=3&dl=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&dp=%2Fv2%2FOfficial%2FNewestSalePage&ch=web&sr=1280x720&ssid=be30e2ec-63e5-4dac-8c00-10c87a92f160&ul=zh-TW&ht=1778278307892&tid=UA-63092235-26&ld=zh-tw&ccode=tw&evtid=e8da9d2e-8ce3-4e03-bda4-38940d4d3a97&fbp=fb.1.1778278305284.816657911361997935&shopid=41047&cd1=5fa3bd5b-bb52-4955-b7bc-88a4d2d87e10&cd2=gaClientId&cd3=false&cd4=5fa3bd5b-bb52-4955-b7bc-88a4d2d87e10%2F%2FgaClientId%2F%2F&cd6=tw&cd7=41047&cd8=zh-tw&cd9=TWD&fpids=%5B%7B%22version%22%3A%223.4.1%22%2C%22id%22%3A%2241b250bc99e589ff33764d1ed029dd87%22%7D%5D&did=d881b21a-aceb-4e35-ac86-4e5cbb28eb40&cid=5fa3bd5b-bb52-4955-b7bc-88a4d2d87e10&evtn=view&evtk1=view_type&evtvs1=NewestSalePage&evtk2=view_title&evtvs2=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&evtk3=view_from&evtvs3=unknown&evtk4=view_detail&evtvs4=/v2/Official/NewestSalePage&evtk5=event_id&evtvs5=6e69034a-8e10-4156-a05a-7b9c3360b3bc_1778278307768",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.kampojanechen.org/webapi/ShoppingCartV2/GetCount?locationId=0&shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [],
+      "size_hint": 1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/10840491732/?random=1778278308008&cv=11&fst=1778278308008&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562v9216221438za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616985~115938465~115938468~118463262&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&rcb=4&frm=0&tiba=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/10840491732/?random=1778278307973&cv=11&fst=1778278307973&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562v9216221438za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616985~115938465~115938468~118463262&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&rcb=4&frm=0&tiba=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/10840491732/?random=1778278308004&cv=11&fst=1778278308004&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562v9216221438za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616985~115938465~115938468~118463262&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&rcb=4&frm=0&tiba=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/ccm/form-data/10840491732?gtm=45be6562v9216221438za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616985~115938465~115938468~118463262&rcb=4&npa=0&frm=0&pscdl=noapi&auid=78577336.1778278305&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&ec_mode=a&_tu=QA&em=tv.1",
+      "status": 204,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/10840491732/?random=1778278308011&cv=11&fst=1778278308011&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6562v9216221438za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616985~115938465~115938468~118463262&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&rcb=4&frm=0&tiba=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=QA&data=event%3Dgtag.config&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=4&frm=0&en=view&dl=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&scrsrc=www.googletagmanager.com&rnd=1629173577.1778278308&dt=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&auid=78577336.1778278305&navt=n&npa=0&ep.view_type=NewestSalePage&ep.view_title=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&ep.view_from=unknown&_tu=QA&gtm=45be6562v9216221438za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616985~115938465~115938468~118463262&apve=1&apvf=f&apvc=0&tids=AW-10840491732&tid=AW-10840491732&tft=1778278308021&tfd=1173",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=4&frm=0&en=page_view&dl=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&scrsrc=www.googletagmanager.com&rnd=1629173577.1778278308&dt=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&auid=78577336.1778278305&navt=n&npa=0&_tu=QA&gtm=45be6562v9216221438za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616985~115938465~115938468~118463262&apve=1&apvf=f&apvc=0&tids=AW-10840491732&tid=AW-10840491732&tft=1778278308021&tfd=1172",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://fts-api.91app.com/salepage-listing/api/search/config/41047?lang=zh-TW&locationId=0",
+      "status": 200,
+      "keys": [
+        "code",
+        "message",
+        "data"
+      ],
+      "size_hint": 190
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/10840491732/?random=1778278308017&cv=11&fst=1778278308017&fmt=8&bg=ffffff&guid=ON&async=1&en=view&gtm=45be6562v9216221438za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616985~115938465~115938468~118463262&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kampojanechen.org%2Fv2%2FOfficial%2FNewestSalePage&rcb=4&frm=0&tiba=%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=78577336.1778278305&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=QA&data=event%3Dview%3Bview_type%3DNewestSalePage%3Bview_title%3D%E6%9C%80%E6%96%B0%E5%95%86%E5%93%81%20-%20%E5%8F%B0%E7%81%A3%E5%B2%A1%E6%B3%A2%E8%81%96%E5%9C%B0%3Bview_from%3Dunknown&gcp=5",
+      "status": 200,
+      "keys": [],
+      "size_hint": -1
+    },
+    {
+      "url": "https://www.kampojanechen.org/webapi/TraceSalePageList/GetCount?shopId=41047&lang=zh-TW",
+      "status": 200,
+      "keys": [],
+      "size_hint": 1
+    },
+    {
+      "url": "https://jooii.91app.io/jooii-search-panel/v1/shop",
+      "status": 200,
+      "keys": [
+        "is_enabled"
+      ],
+      "size_hint": 21
+    }
+  ],
+  "findings": [
+    {
+      "source_url": "https://www.kampojanechen.org/",
+      "finding_type": "missing_csp_meta",
+      "severity": "low",
+      "field_name": "CSP",
+      "description": "No CSP meta tag detected.",
+      "recommendation": "Set strict CSP in HTTP headers.",
+      "evidence": "meta not found"
+    },
+    {
+      "source_url": "https://track.91app.io/v2/did",
+      "finding_type": "internal_id_exposure",
+      "severity": "low",
+      "field_name": "id",
+      "description": "JSON appears to expose id-like fields.",
+      "recommendation": "Minimize internal identifiers when unnecessary.",
+      "evidence": "did"
+    },
+    {
+      "source_url": "https://www.kampojanechen.org/v2/Official/NewestSalePage",
+      "finding_type": "missing_csp_meta",
+      "severity": "low",
+      "field_name": "CSP",
+      "description": "No CSP meta tag detected.",
+      "recommendation": "Set strict CSP in HTTP headers.",
+      "evidence": "meta not found"
+    },
+    {
+      "source_url": "https://www.kampojanechen.org/robots.txt",
+      "finding_type": "crawler_policy",
+      "severity": "info",
+      "field_name": "/robots.txt",
+      "description": "/robots.txt checked.",
+      "recommendation": "Ensure policy reflects intended crawling visibility.",
+      "evidence": "status=200"
+    },
+    {
+      "source_url": "https://www.kampojanechen.org/v2/Official/NewestSalePage/robots.txt",
+      "finding_type": "crawler_policy",
+      "severity": "info",
+      "field_name": "/robots.txt",
+      "description": "/robots.txt checked.",
+      "recommendation": "Ensure policy reflects intended crawling visibility.",
+      "evidence": "status=404"
+    },
+    {
+      "source_url": "https://www.kampojanechen.org/sitemap.xml",
+      "finding_type": "crawler_policy",
+      "severity": "info",
+      "field_name": "/sitemap.xml",
+      "description": "/sitemap.xml checked.",
+      "recommendation": "Ensure policy reflects intended crawling visibility.",
+      "evidence": "status=404"
+    },
+    {
+      "source_url": "https://www.kampojanechen.org/v2/Official/NewestSalePage/sitemap.xml",
+      "finding_type": "crawler_policy",
+      "severity": "info",
+      "field_name": "/sitemap.xml",
+      "description": "/sitemap.xml checked.",
+      "recommendation": "Ensure policy reflects intended crawling visibility.",
+      "evidence": "status=404"
+    }
+  ]
 }

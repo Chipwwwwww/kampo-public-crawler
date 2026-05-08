@@ -1,8 +1,20 @@
 {
-  "run_id": "",
-  "captured_at": "",
-  "targets": [],
-  "stats": {},
+  "run_id": "run_20260509_061212",
+  "captured_at": "2026-05-08T22:12:22.504889+00:00",
+  "targets": [
+    "https://www.kampojanechen.org/",
+    "https://www.kampojanechen.org/v2/Official/NewestSalePage"
+  ],
+  "stats": {
+    "intercepted_json_count": 70,
+    "saved_json_api_count": 29,
+    "entities_extracted_json": 165,
+    "entities_extracted_dom": 10,
+    "entities_extracted_hydration": 2,
+    "public_quantity_event_count": 0,
+    "public_sales_text_count": 50,
+    "inserted_snapshot_count": 120
+  },
   "hot_entities": [],
   "events": [],
   "rejections": {}
