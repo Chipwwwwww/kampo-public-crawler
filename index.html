@@ -1,11 +1,18 @@
-﻿<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Kampo Public Crawler</title>
-</head>
-<body>
-  <h1>Kampo Public Crawler</h1>
-  <p>GitHub and Vercel connected.</p>
-</body>
-</html>
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Universal Intelligence Striker Dashboard</title><style>body{font-family:Arial;margin:20px;background:#111;color:#eee}.card{background:#1d1d1d;padding:12px;border-radius:8px;margin:10px 0}table{width:100%;border-collapse:collapse}th,td{border:1px solid #333;padding:6px}</style></head><body>
+<h1>Universal Intelligence Striker</h1>
+<div class="card" id="summary">載入中...</div>
+<div class="card"><h2>熱賣 Entity</h2><table id="hot"><thead><tr><th>Entity</th><th>Estimated Revenue</th></tr></thead><tbody></tbody></table></div>
+<div class="card"><h2>實時流水 Events</h2><table id="events"><thead><tr><th>Time</th><th>Type</th><th>Name</th><th>Delta</th><th>Amount</th></tr></thead><tbody></tbody></table></div>
+<div class="card"><h2>Defense Findings</h2><table id="findings"><thead><tr><th>Severity</th><th>Type</th><th>URL</th><th>Description</th></tr></thead><tbody></tbody></table></div>
+<script>
+async function load(){
+ const s=await fetch('data/latest_summary.json').then(r=>r.json());
+ const d=await fetch('data/defense_audit_report.json').then(r=>r.json());
+ const total=(s.events||[]).filter(x=>x.event_type==='public_quantity_decrease').reduce((a,b)=>a+(b.estimated_public_amount_change||0),0);
+ document.getElementById('summary').innerHTML=`Run: ${s.run_id||'-'}<br>Total Estimated Revenue: <b>${total.toFixed(2)}</b><br>Targets: ${(s.targets||[]).join(', ')}`;
+ (s.hot_entities||[]).forEach(x=>hot.querySelector('tbody').insertAdjacentHTML('beforeend',`<tr><td>${x.entity_name||''}</td><td>${x.estimated_revenue||0}</td></tr>`));
+ (s.events||[]).forEach(x=>events.querySelector('tbody').insertAdjacentHTML('beforeend',`<tr><td>${x.detected_at||''}</td><td>${x.event_type||''}</td><td>${x.entity_name||''}</td><td>${x.delta||0}</td><td>${x.estimated_public_amount_change||0}</td></tr>`));
+ (d.findings||[]).forEach(x=>findings.querySelector('tbody').insertAdjacentHTML('beforeend',`<tr><td>${x.severity||''}</td><td>${x.finding_type||''}</td><td>${x.source_url||''}</td><td>${x.description||''}</td></tr>`));
+}
+load();
+</script></body></html>

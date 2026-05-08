@@ -1,0 +1,26 @@
+name: crawler
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'
+    - cron: '0 2 * * *'
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python -m playwright install --with-deps chromium
+      - run: python crawler/universal_public_monitor.py
+      - if: github.event_name == 'schedule' && github.event.schedule == '0 2 * * *'
+        run: python crawler/defense_audit.py
+      - name: Commit artifacts
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add data/*.json data/*.md gampo_public_monitor.db || true
+          git commit -m "chore: update crawler artifacts" || echo "no changes"
+          git push || true
